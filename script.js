@@ -290,5 +290,7 @@ nextBtn.addEventListener('click', () => {
     }
 });
 
-// Initial Start
-loadQuestion();
+// This ensures the script waits for the HTML to be fully ready
+window.onload = function() {
+    loadQuestion();
+};
